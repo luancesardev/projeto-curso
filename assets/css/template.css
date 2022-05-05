@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+* {
+    font-family: Roboto Slab;
+}
+
+.balao {
+    background-color: #00f;
+    display: inline-block;
+    color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.balao::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    margin-left: 50px;
+    top: 15px;
+    border: 20px solid;
+    border-color: transparent transparent transparent #00f;
+}
+
